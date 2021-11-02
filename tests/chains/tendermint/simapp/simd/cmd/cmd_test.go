@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint/simapp"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint/simapp/simd/cmd"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	"github.com/hyperledger-labs/yui-relayer/tests/tendermint/simapp"
-	"github.com/hyperledger-labs/yui-relayer/tests/tendermint/simapp/simd/cmd"
 	"github.com/stretchr/testify/require"
 )
 

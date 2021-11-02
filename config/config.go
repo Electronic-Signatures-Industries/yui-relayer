@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/hyperledger-labs/yui-relayer/core"
 )
 
 type Config struct {

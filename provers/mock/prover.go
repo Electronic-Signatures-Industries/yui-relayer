@@ -10,8 +10,8 @@ import (
 	chantypes "github.com/cosmos/ibc-go/modules/core/04-channel/types"
 	ibcexported "github.com/cosmos/ibc-go/modules/core/exported"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	mocktypes "github.com/datachainlab/ibc-mock-client/modules/light-clients/xx-mock/types"
-	"github.com/hyperledger-labs/yui-relayer/core"
 )
 
 type Prover struct {

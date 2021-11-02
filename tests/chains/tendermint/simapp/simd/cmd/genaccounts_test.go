@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint/simapp"
+	simcmd "github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint/simapp/simd/cmd"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/server"
@@ -12,8 +14,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/genutil"
 	genutiltest "github.com/cosmos/cosmos-sdk/x/genutil/client/testutil"
-	"github.com/hyperledger-labs/yui-relayer/tests/tendermint/simapp"
-	simcmd "github.com/hyperledger-labs/yui-relayer/tests/tendermint/simapp/simd/cmd"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"

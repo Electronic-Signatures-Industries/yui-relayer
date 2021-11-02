@@ -1,9 +1,9 @@
 package module
 
 import (
+	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/ethereum"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/hyperledger-labs/yui-relayer/chains/ethereum"
-	"github.com/hyperledger-labs/yui-relayer/config"
 	"github.com/spf13/cobra"
 )
 

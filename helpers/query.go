@@ -1,8 +1,8 @@
 package helpers
 
 import (
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/hyperledger-labs/yui-relayer/core"
 )
 
 // QueryBalance is a helper function for query balance

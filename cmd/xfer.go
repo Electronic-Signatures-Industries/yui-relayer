@@ -3,10 +3,10 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	transfertypes "github.com/cosmos/ibc-go/modules/apps/transfer/types"
-	"github.com/hyperledger-labs/yui-relayer/config"
-	"github.com/hyperledger-labs/yui-relayer/core"
 	"github.com/spf13/cobra"
 )
 

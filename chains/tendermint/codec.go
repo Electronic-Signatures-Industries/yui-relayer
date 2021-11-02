@@ -1,8 +1,8 @@
 package tendermint
 
 import (
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/hyperledger-labs/yui-relayer/core"
 )
 
 // RegisterInterfaces register the module interfaces to protobuf

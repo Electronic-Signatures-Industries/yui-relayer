@@ -32,7 +32,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/hyperledger-labs/yui-relayer/tests/tendermint/simapp"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint/simapp"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the

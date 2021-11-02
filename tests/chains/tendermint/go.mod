@@ -1,4 +1,4 @@
-module github.com/hyperledger-labs/yui-relayer/tests/tendermint
+module github.com/Electronic-Signatures-Industries/yui-relayer/tests/tendermint
 
 go 1.15
 

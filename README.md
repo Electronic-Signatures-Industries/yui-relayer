@@ -1,7 +1,7 @@
 # Relayer
 
-![Test](https://github.com/hyperledger-labs/yui-relayer/workflows/Test/badge.svg)
-[![GoDoc](https://godoc.org/github.com/hyperledger-labs/yui-relayer?status.svg)](https://pkg.go.dev/github.com/hyperledger-labs/yui-relayer?tab=doc)
+![Test](https://github.com/Electronic-Signatures-Industries/yui-relayer/workflows/Test/badge.svg)
+[![GoDoc](https://godoc.org/github.com/Electronic-Signatures-Industries/yui-relayer?status.svg)](https://pkg.go.dev/github.com/Electronic-Signatures-Industries/yui-relayer?tab=doc)
 
 A relayer implementation supports packet relays between various blockchains.
 

@@ -1,4 +1,4 @@
-package tendermint
+package ethermint
 
 import (
 	"context"
@@ -27,6 +27,7 @@ import (
 	libclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 
 	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
+	"github.com/tharsis/ethermint/crypto/hd"
 )
 
 var (
@@ -385,6 +386,7 @@ func (c *Chain) CLIContext(height int64) sdkCtx.Context {
 		WithAccountRetriever(authTypes.AccountRetriever{}).
 		WithBroadcastMode(flags.BroadcastBlock).
 		WithKeyring(c.Keybase).
+		WithKeyringOptions(hd.EthSecp256k1Option()).
 		WithOutputFormat("json").
 		WithFrom(c.config.Key).
 		WithFromName(c.config.Key).

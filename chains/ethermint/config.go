@@ -1,4 +1,4 @@
-package tendermint
+package ethermint
 
 import (
 	"fmt"

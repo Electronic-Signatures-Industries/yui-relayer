@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/helpers"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/ibc-go/modules/core/exported"
-	"github.com/hyperledger-labs/yui-relayer/config"
-	"github.com/hyperledger-labs/yui-relayer/core"
-	"github.com/hyperledger-labs/yui-relayer/helpers"
 	"github.com/spf13/cobra"
 )
 

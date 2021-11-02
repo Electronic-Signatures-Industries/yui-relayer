@@ -1,9 +1,9 @@
 package module
 
 import (
+	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/provers/mock"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/hyperledger-labs/yui-relayer/config"
-	"github.com/hyperledger-labs/yui-relayer/provers/mock"
 	"github.com/spf13/cobra"
 )
 

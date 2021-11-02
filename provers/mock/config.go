@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/hyperledger-labs/yui-relayer/core"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 )
 
 var _ core.ProverConfigI = (*ProverConfig)(nil)

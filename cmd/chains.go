@@ -7,9 +7,9 @@ import (
 	"os"
 	"path"
 
+	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/hyperledger-labs/yui-relayer/config"
-	"github.com/hyperledger-labs/yui-relayer/core"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

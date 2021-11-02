@@ -3,7 +3,7 @@ package relayer.provers.mock.config;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/hyperledger-labs/yui-relayer/provers/mock";
+option go_package = "github.com/Electronic-Signatures-Industries/yui-relayer/provers/mock";
 option (gogoproto.goproto_getters_all) = false;
 
 message ProverConfig {}
