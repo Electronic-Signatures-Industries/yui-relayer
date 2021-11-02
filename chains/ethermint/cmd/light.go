@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/tendermint"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/ethermint"
 	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	tmclient "github.com/cosmos/ibc-go/modules/light-clients/07-tendermint/types"
@@ -40,8 +40,8 @@ func initLightCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
-			prover := c.ProverI.(*tendermint.Prover)
+			chain := c.ChainI.(*ethermint.Chain)
+			prover := c.ProverI.(*ethermint.Prover)
 
 			db, df, err := prover.NewLightDB()
 			if err != nil {
@@ -96,7 +96,7 @@ func updateLightCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			prover := c.ProverI.(*tendermint.Prover)
+			prover := c.ProverI.(*ethermint.Prover)
 
 			bh, err := prover.GetLatestLightHeader()
 			if err != nil {
@@ -129,8 +129,8 @@ func lightHeaderCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
-			prover := c.ProverI.(*tendermint.Prover)
+			chain := c.ChainI.(*ethermint.Chain)
+			prover := c.ProverI.(*ethermint.Prover)
 
 			var header *tmclient.Header
 
@@ -154,7 +154,7 @@ func lightHeaderCmd(ctx *config.Context) *cobra.Command {
 					}
 
 					if height == -1 {
-						return tendermint.ErrLightNotInitialized
+						return ethermint.ErrLightNotInitialized
 					}
 				}
 
@@ -188,7 +188,7 @@ func deleteLightCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			prover := c.ProverI.(*tendermint.Prover)
+			prover := c.ProverI.(*ethermint.Prover)
 
 			err = prover.DeleteLightDB()
 			if err != nil {

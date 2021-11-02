@@ -6,10 +6,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func TendermintCmd(m codec.Codec, ctx *config.Context) *cobra.Command {
+func EthermintCmd(m codec.Codec, ctx *config.Context) *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "tendermint",
-		Short: "manage tendermint configurations",
+		Use:   "ethermint",
+		Short: "manage ethermint configurations",
 	}
 
 	cmd.AddCommand(

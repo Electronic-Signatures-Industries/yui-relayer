@@ -1,6 +1,6 @@
 module github.com/Electronic-Signatures-Industries/yui-relayer
 
-go 1.15
+go 1.16
 
 require (
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
@@ -12,6 +12,7 @@ require (
 	github.com/ethereum/go-ethereum v1.10.11
 	github.com/gogo/protobuf v1.3.3
 	github.com/hyperledger-labs/yui-ibc-solidity v0.0.0-20210801023756-05047b73f120
+	github.com/regen-network/cosmos-proto v0.3.1 // indirect
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.9.0
 	github.com/tendermint/tendermint v0.34.14
@@ -22,9 +23,10 @@ require (
 )
 
 replace (
-	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.21.0-beta
-	github.com/btcsuite/btcutil => github.com/btcsuite/btcutil v1.0.2
+	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.22.0-beta
+	github.com/btcsuite/btcutil => github.com/btcsuite/btcutil v1.0.3-0.20201208143702-a53e38424cce
 	github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.2-alpha.regen.4
+	github.com/hyperledger-labs/yui-ibc-solidity => github.com/Electronic-Signatures-Industries/yui-ibc-solidity v1.0.4
 	github.com/keybase/go-keychain => github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4
 )

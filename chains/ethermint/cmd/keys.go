@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/tendermint"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/ethermint"
 	"github.com/Electronic-Signatures-Industries/yui-relayer/config"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/spf13/cobra"
@@ -40,7 +40,7 @@ func keysAddCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
+			chain := c.ChainI.(*ethermint.Chain)
 
 			var keyName string
 			if len(args) == 2 {
@@ -53,7 +53,7 @@ func keysAddCmd(ctx *config.Context) *cobra.Command {
 				return errKeyExists(keyName)
 			}
 
-			mnemonic, err := tendermint.CreateMnemonic()
+			mnemonic, err := ethermint.CreateMnemonic()
 			if err != nil {
 				return err
 			}
@@ -96,7 +96,7 @@ func keysRestoreCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
+			chain := c.ChainI.(*ethermint.Chain)
 
 			if chain.KeyExists(keyName) {
 				return errKeyExists(keyName)
@@ -128,7 +128,7 @@ func keysShowCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
+			chain := c.ChainI.(*ethermint.Chain)
 
 			var keyName string
 			if len(args) == 2 {
@@ -165,7 +165,7 @@ func keysListCmd(ctx *config.Context) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			chain := c.ChainI.(*tendermint.Chain)
+			chain := c.ChainI.(*ethermint.Chain)
 
 			info, err := chain.Keybase.List()
 			if err != nil {

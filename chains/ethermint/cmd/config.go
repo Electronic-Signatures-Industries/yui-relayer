@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/tendermint"
+	"github.com/Electronic-Signatures-Industries/yui-relayer/chains/ethermint"
 	"github.com/Electronic-Signatures-Industries/yui-relayer/core"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/spf13/cobra"
@@ -29,15 +29,15 @@ func generateChainConfigCmd(m codec.Codec) *cobra.Command {
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) (err error) {
 			// TODO make it configurable
-			c := tendermint.ChainConfig{
+			c := ethermint.ChainConfig{
 				Key:           "testkey",
 				ChainId:       args[0],
 				RpcAddr:       "http://localhost:26557",
-				AccountPrefix: "cosmos",
+				AccountPrefix: "ethm",
 				GasAdjustment: 1.5,
-				GasPrices:     "0.025stake",
+				GasPrices:     "0.025aphoton",
 			}
-			p := tendermint.ProverConfig{
+			p := ethermint.ProverConfig{
 				TrustingPeriod: "336h",
 			}
 			config, err := core.NewChainProverConfig(m, &c, &p)

@@ -34,12 +34,12 @@ func Execute(modules ...config.ModuleI) error {
 	// Register top level flags --home and --debug
 	rootCmd.PersistentFlags().StringVar(&homePath, flags.FlagHome, defaultHome, "set home directory")
 	rootCmd.PersistentFlags().BoolVarP(&debug, "debug", "d", false, "debug output")
-	if err := viper.BindPFlag(flags.FlagHome, rootCmd.Flags().Lookup(flags.FlagHome)); err != nil {
-		return err
-	}
-	if err := viper.BindPFlag("debug", rootCmd.Flags().Lookup("debug")); err != nil {
-		return err
-	}
+	// if err := viper.BindPFlag(flags.FlagHome, rootCmd.Flags().Lookup(flags.FlagHome)); err != nil {
+	// 	return err
+	// }
+	// if err := viper.BindPFlag("debug", rootCmd.Flags().Lookup("debug")); err != nil {
+	// 	return err
+	// }
 
 	// Register interfaces
 
