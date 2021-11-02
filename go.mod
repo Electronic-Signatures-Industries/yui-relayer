@@ -22,6 +22,8 @@ require (
 )
 
 replace (
+	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.21.0-beta
+	github.com/btcsuite/btcutil => github.com/btcsuite/btcutil v1.0.2
 	github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.2-alpha.regen.4
 	github.com/keybase/go-keychain => github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4
