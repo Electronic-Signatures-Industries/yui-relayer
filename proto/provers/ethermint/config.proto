@@ -1,0 +1,9 @@
+syntax = "proto3";
+package relayer.provers.ethermint.config;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/Electronic-Signatures-Industries/yui-relayer/provers/ethermint";
+option (gogoproto.goproto_getters_all) = false;
+
+message ProverConfig {}
